@@ -60,9 +60,9 @@ const Collaborators: React.FC = () => {
         </div>
 
         {/* Table */}
-        <div className="w-full">
+        <div className="w-full overflow-x-auto">
           {/* Table Header */}
-          <div className="grid grid-cols-12 gap-4 px-4 py-3 bg-gray-50 rounded-t-lg border-b border-gray-200">
+          <div className="grid grid-cols-12 gap-2 md:gap-4 px-4 py-3 bg-gray-50 rounded-t-lg border-b border-gray-200 min-w-[600px]">
             <div className="col-span-3 text-sm font-medium text-gray-700">
               Name
             </div>
@@ -82,25 +82,25 @@ const Collaborators: React.FC = () => {
             {collaborators.map((collaborator, index) => (
               <div
                 key={collaborator.id}
-                className={`grid grid-cols-12 gap-4 px-4 py-4 items-center hover:bg-gray-50 transition-colors ${
+                className={`grid grid-cols-12 gap-2 md:gap-4 px-4 py-4 items-center hover:bg-gray-50 transition-colors min-w-[600px] ${
                   index !== collaborators.length - 1 ? "border-b border-gray-100" : ""
                 }`}
               >
-                <div className="col-span-3 flex items-center gap-3">
-                  <div className="w-6 h-6 text-gray-500">
+                <div className="col-span-3 flex items-center gap-2 md:gap-3">
+                  <div className="w-5 h-5 md:w-6 md:h-6 text-gray-500 flex-shrink-0">
                     <User className="w-full h-full" strokeWidth={1.5} />
                   </div>
-                  <span className="text-sm text-gray-900 font-medium">
+                  <span className="text-sm text-gray-900 font-medium truncate">
                     {collaborator.name}
                   </span>
                 </div>
                 <div className="col-span-4">
-                  <span className="text-sm text-gray-700">
+                  <span className="text-sm text-gray-700 truncate block">
                     {collaborator.email}
                   </span>
                 </div>
                 <div className="col-span-3">
-                  <span className="text-sm text-gray-700">
+                  <span className="text-sm text-gray-700 truncate block">
                     {collaborator.role}
                   </span>
                 </div>
