@@ -1,4 +1,4 @@
-import MapNotes from '../components/MapNotes';
+import MapNotes from "../components/MapNotes";
 
 export default function Index() {
   return (
