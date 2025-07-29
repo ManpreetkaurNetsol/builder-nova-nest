@@ -57,6 +57,16 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        "map-notes": {
+          black: "hsl(var(--map-notes-black))",
+          "gray-20": "hsl(var(--map-notes-gray-20))",
+          blue: "hsl(var(--map-notes-blue))",
+          "gray-light": "hsl(var(--map-notes-gray-light))",
+          "gray-00": "hsl(var(--map-notes-gray-00))",
+          white: "hsl(var(--map-notes-white))",
+          red: "hsl(var(--map-notes-red))",
+          "blue-bg": "hsl(var(--map-notes-blue-bg))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
