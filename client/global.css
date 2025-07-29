@@ -40,20 +40,23 @@
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Map Notes Design System Colors */
+    --map-notes-black: 220 13% 13.3%; /* rgba(24, 25, 26, 1) */
+    --map-notes-gray-20: 0 0% 89%; /* #E3E3E3 */
+    --map-notes-blue: 197 100% 50%; /* rgba(0, 178, 255, 1) */
+    --map-notes-gray-light: 0 0% 95.3%; /* rgba(243, 243, 243, 1) */
+    --map-notes-gray-00: 0 0% 99.2%; /* #FDFDFD */
+    --map-notes-white: 0 0% 100%; /* rgba(255, 255, 255, 1) */
+    --map-notes-red: 6 86% 55%; /* rgba(241, 54, 36, 1) */
+    --map-notes-blue-bg: 197 100% 97%; /* #F4FBFF */
   }
 
   .dark {
@@ -92,6 +95,16 @@
     --sidebar-accent-foreground: 240 4.8% 95.9%;
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Map Notes Design System Colors - Dark mode variants */
+    --map-notes-black: 210 40% 98%;
+    --map-notes-gray-20: 217.2 32.6% 17.5%;
+    --map-notes-blue: 197 100% 50%;
+    --map-notes-gray-light: 217.2 32.6% 15%;
+    --map-notes-gray-00: 222.2 84% 4.9%;
+    --map-notes-white: 222.2 84% 4.9%;
+    --map-notes-red: 6 86% 55%;
+    --map-notes-blue-bg: 197 50% 10%;
   }
 }
 
@@ -102,5 +115,10 @@
 
   body {
     @apply bg-background text-foreground;
+  }
+
+  /* Proxima Nova font approximation */
+  .font-proxima {
+    font-family: 'Proxima Nova', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
   }
 }
