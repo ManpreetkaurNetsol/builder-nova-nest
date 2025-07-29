@@ -17,7 +17,7 @@ const Collaborators: React.FC = () => {
       role: "Business Analyst",
     },
     {
-      id: "2", 
+      id: "2",
       name: "Diana ICC",
       email: "dianaaticc@yopmail.com",
       role: "Client",
@@ -25,7 +25,7 @@ const Collaborators: React.FC = () => {
     {
       id: "3",
       name: "Saumya",
-      email: "saumya@netsolutions.com", 
+      email: "saumya@netsolutions.com",
       role: "Business Analyst",
     },
     {
@@ -83,7 +83,9 @@ const Collaborators: React.FC = () => {
               <div
                 key={collaborator.id}
                 className={`grid grid-cols-12 gap-2 md:gap-4 px-4 py-4 items-center hover:bg-gray-50 transition-colors min-w-[600px] ${
-                  index !== collaborators.length - 1 ? "border-b border-gray-100" : ""
+                  index !== collaborators.length - 1
+                    ? "border-b border-gray-100"
+                    : ""
                 }`}
               >
                 <div className="col-span-3 flex items-center gap-2 md:gap-3">
@@ -109,7 +111,10 @@ const Collaborators: React.FC = () => {
                     onClick={() => handleDelete(collaborator.id)}
                     className="flex w-8 h-8 p-1.5 justify-center items-center rounded-lg hover:bg-red-50 transition-colors group"
                   >
-                    <Trash2 className="w-5 h-5 text-red-500 group-hover:text-red-600" strokeWidth={1.5} />
+                    <Trash2
+                      className="w-5 h-5 text-red-500 group-hover:text-red-600"
+                      strokeWidth={1.5}
+                    />
                   </button>
                 </div>
               </div>
