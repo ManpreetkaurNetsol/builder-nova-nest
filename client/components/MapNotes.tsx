@@ -79,8 +79,8 @@ const MapNotes: React.FC = () => {
   };
 
   return (
-    <div className="flex w-full max-w-[360px] mx-auto h-screen bg-map-notes-white font-proxima">
-      <div className="flex flex-col w-full p-6 gap-6 rounded-l-2xl bg-map-notes-white shadow-[0_16px_40px_4px_rgba(0,0,0,0.06)]">
+    <div className="flex w-full max-w-[360px] mx-auto min-h-screen bg-map-notes-white font-proxima">
+      <div className="flex flex-col w-full p-6 gap-6 rounded-l-2xl bg-map-notes-white shadow-[0_16px_40px_4px_rgba(0,0,0,0.06)] min-h-full">
         {/* Header */}
         <div className="flex flex-col gap-4">
           <div className="flex justify-between items-center">
